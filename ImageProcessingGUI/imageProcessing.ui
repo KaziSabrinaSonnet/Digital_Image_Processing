@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialog</class>
+ <widget class="QDialog" name="dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1171</width>
+    <height>864</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="loadButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>340</y>
+     <width>148</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>    Load Image</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="imgLabel">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>370</y>
+     <width>361</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveButton">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>340</y>
+     <width>179</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save Image</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="processedLabel">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>370</y>
+     <width>351</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Panel</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSlider" name="hSlider">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>201</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="tickInterval">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="referencedLabel">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>370</y>
+     <width>331</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="referenceButton">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>340</y>
+     <width>241</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reference Image for Histogram Matching</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>30</y>
+     <width>104</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_7">
+    <item>
+     <widget class="QCheckBox" name="checkface">
+      <property name="text">
+       <string>Face</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkeye">
+      <property name="text">
+       <string>Eye</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>60</y>
+     <width>1041</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="cannyButton">
+        <property name="text">
+         <string>Canny Edge Detection</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="detectionButton">
+        <property name="text">
+         <string>Face and Eye Detection</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cartoonButton">
+        <property name="text">
+         <string>Cartoon Effect</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="hismatchingButton">
+        <property name="text">
+         <string>Histogram Matching </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="segmentButton">
+        <property name="text">
+         <string>Segmentation</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>120</y>
+     <width>911</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QPushButton" name="bwButton">
+      <property name="text">
+       <string>Black and White</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="hiseqButton">
+      <property name="text">
+       <string>Histogram Equalization </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="sketchButton">
+      <property name="text">
+       <string>Pencil Sketch Effect</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="opButton">
+      <property name="text">
+       <string>Oil Painting Effect</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
